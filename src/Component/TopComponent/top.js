@@ -21,11 +21,24 @@ function Top(props) {
         })
     },[props.url]);
 
+    let value = 5;
+
+    useEffect(() => {
+        
+        if (window.innerWidth > 650) {
+            value = 5
+        }
+        else{
+            value = 3
+        }
+        
+    }, [window.innerWidth])
+
     const settings = {
         className: "center",
         infinite: true,
         centerPadding: "60px",
-        slidesToShow: 5,
+        slidesToShow: value,
         swipeToSlide: true,
         afterChange: function(index) {
         //   console.log(

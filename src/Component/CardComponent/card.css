@@ -2,6 +2,7 @@
     text-decoration: none;
 }
 .movie-card{
+    /* min-width: 200px; */
     margin: .5rem;
     cursor: pointer;
     border-radius: .2rem;
@@ -42,4 +43,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .movie-vote{
+        font-size: .8rem;
+    }
+    .movie-vote span{
+        font-size: .8rem;
+    }
 }

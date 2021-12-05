@@ -11,3 +11,8 @@
     margin-left: 5%;
 }
 
+@media only screen and (max-width : 650px) {
+    .swipper-heading{
+        font-size: 1rem;
+    }
+}
