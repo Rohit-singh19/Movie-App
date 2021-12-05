@@ -1,0 +1,35 @@
+import react from "react";
+import "../Nav/nav.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch, faBell, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+
+
+function Nav() {
+
+    // email: 
+    return(
+        <> 
+            <div className="nav">
+                <div className ="left">
+                    <div className ="logo"><img src="https://www.freepnglogos.com/uploads/netflix-logo-history-png-33.png" alt="Logo"/></div>
+                    <div className = "menu">
+                        <ul>
+                            <li><a href ="#">Home</a></li>
+                            <li><a href ="#">TV Shows</a></li>
+                            <li><a href ="#">Movies</a></li>
+                            <li><a href ="#">New & Popular</a></li>
+                            <li><a href ="#">My List</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="right">
+                    <div className = "search"><FontAwesomeIcon icon={faSearch} /></div>
+                    <div className="notification"><FontAwesomeIcon icon={faBell} /></div>
+                    <div className="profile-img"><img src="https://images.unsplash.com/photo-1524293568345-75d62c3664f7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNhcnRvb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Profile Image"/><span><FontAwesomeIcon icon={faCaretDown} /></span></div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Nav;

@@ -1,0 +1,37 @@
+.nav-page-header{
+    padding: 5rem 4rem 1rem 4rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbox{
+    position: relative;
+}
+
+.searchbox input{
+    padding: .5rem 1rem;
+    width: 30vw;
+    border-radius: .3rem;
+}
+
+.searchbox input:focus{
+    outline: none;
+}
+
+.searchbox .search{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translate(-50%,-50%);
+}
+
+.card-container{
+    padding: 0 4rem;
+    color: white;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}

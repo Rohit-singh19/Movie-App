@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav{
+    width: 100%;
+    /* background-color: var(--main); */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.7) 10%, rgba(255,255,255,0));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 4rem;
+    height: auto;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* position: relative; */
+}
+
+.left{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left .logo{
+    width: 100px;
+    margin-right: 1rem;
+}
+
+.left .logo img{
+    width: 100%;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1.2rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.menu ul li a{
+
+    text-decoration: none;
+    color: white;
+}
+.menu ul li a:hover{
+    opacity: .8;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right div{
+    margin: 0 1rem;
+    font-size: 1.3rem;
+}
+.profile-img{
+    width: 70px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.bars{
+    display: none;
+    z-index: 1001;
+}
+
+.bars svg{
+    font-size: 1.5rem;
+}
+
+a.active-link{
+    color: red !important;
+    font-weight: 800;
+}
+
+@media only screen and (max-width : 1000px) {
+    .nav{
+        /* position: relative; */
+        padding: 1rem;
+    }
+    .bars{
+        display: block;
+    }
+    .right{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        display: none;
+        /* transition: .5s; */
+    }
+
+    .menu#hidden{
+        /* transition: .5s; */
+        /* transform: translateX(2rem); */
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 60vh;
+        background: black;
+        color: white;
+        z-index: 1000;
+    }
+
+    #hidden ul{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

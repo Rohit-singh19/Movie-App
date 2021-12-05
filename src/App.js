@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from"./Component/HomeComponent/Home";
+import Nav from "./Component/NavComponent/Nav";
+
+// importing route..................
+
+import { Route } from "react-router";
+
+// importing the pages..........................
+
+import MoviePage from "./Component/MoviePage/MoviePage";
+import WebShow from "../src/Component/Web/WebShow"
+import { navPageData } from "./apilinks";
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+    <Nav/>
+
+    <Route exact path = "/">
+      <Home/>
+    </Route>
+
+    <Route path = "/web">
+    <WebShow navPageData = {navPageData[0]} />
+    </Route>
+
+    <Route path = "/movie">
+      <WebShow navPageData = {navPageData[1]} />
+    </Route>
+
+    <Route path = "/popular">
+      <WebShow navPageData = {navPageData[2]} />
+    </Route>
+
+    <Route path = "/movie-detail/:id">
+      <MoviePage/>
+    </Route>
+    
+  </>
   );
 }
 

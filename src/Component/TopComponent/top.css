@@ -1,0 +1,13 @@
+.topmost{
+    padding: 1rem 0;
+    overflow: hidden;
+    color: white;
+}
+
+
+.swipper-heading{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-left: 5%;
+}
+
