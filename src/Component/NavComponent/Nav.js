@@ -8,6 +8,8 @@ import {Helmet} from "react-helmet";
 
 import { NavLink } from "react-router-dom";
 
+import logo from "../NavComponent/netflix-logo.png";
+
 
 function Nav() {
 
@@ -23,7 +25,7 @@ function Nav() {
             </Helmet>
             <div className="nav">
                 <div className ="left">
-                    <div className ="logo"><img src="https://www.freepnglogos.com/uploads/netflix-logo-history-png-33.png" alt="Logo"/></div>
+                    <div className ="logo"><img src= {logo} alt="Logo"/></div>
                     <div className = "menu" id = {(showLinks ? "hidden" : "")}>
                         <ul>
                             <li><NavLink exact to ="/" activeClassName = "active-link" >Home</NavLink></li>
