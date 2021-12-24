@@ -1,16 +1,13 @@
-.movieCardContainer{
-    text-decoration: none;
-}
 .movie-card{
-    /* min-width: 200px; */
-    margin: .5rem;
+    width : 100%;
+    /* margin: .5rem; */
     cursor: pointer;
     border-radius: .2rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5),
                 -10px -10px 10px rgba(0, 0, 0, 0.5);
     padding-bottom: 1rem;
     transition: .5s;
-    max-width : 20vw;
+    /* max-width : 20vw; */
     color: white;
 }
 

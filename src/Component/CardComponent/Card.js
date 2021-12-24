@@ -20,8 +20,8 @@ function Card(props) {
 
     return(
         <>
-            <NavLink to = {`/movie-detail/${props.card.id}`} style = {{textDecoration : "none"}} >
-                <div className="movie-card">
+            <NavLink to = {`/movie-detail/${props.card.id}`} style = {{textDecoration : "none"}} className="movie-card">
+                <div >
                         <div className="movie-img">
                             {/* <img src={Image_Url+props.card.poster_path} alt = {props.card.title} /> */}
                             {

@@ -97,3 +97,9 @@ header{
         padding: .5rem .8rem;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .tittle-name{
+        font-size: 1rem;
+    }
+}

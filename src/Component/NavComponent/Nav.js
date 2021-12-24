@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "../NavComponent/nav.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faBell, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faBell, faCaretDown, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import {Helmet} from "react-helmet";
 // import Home from "../HomeComponent/home";
@@ -41,7 +41,10 @@ function Nav() {
                     <div className="profile-img"><img src="https://images.unsplash.com/photo-1524293568345-75d62c3664f7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNhcnRvb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Profile"/><span><FontAwesomeIcon icon={faCaretDown} /></span></div>
                 </div>
                 <div className = "bars" onClick = {() => setShowLinks(!showLinks)} >
-                    <FontAwesomeIcon icon = {faBars} />
+                    {
+                        (showLinks) ? (<FontAwesomeIcon icon = {faTimes} />
+                            ) : (<FontAwesomeIcon icon = {faBars} />)
+                    }
                 </div>
             </div>
         </>

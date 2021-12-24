@@ -4,6 +4,10 @@
     color: white;
 }
 
+.topmost .slick-slider .slick-list .slick-track .slick-slide > div{
+    margin: 1rem;
+}
+
 
 .swipper-heading{
     font-weight: 600;

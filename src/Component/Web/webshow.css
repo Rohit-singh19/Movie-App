@@ -13,6 +13,7 @@
 .searchbox input{
     padding: .5rem 1rem;
     width: 30vw;
+    min-width: 150px;
     border-radius: .3rem;
 }
 
@@ -35,3 +36,13 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .card-container{
+      padding: 0 1rem;
+    }
+    .nav-page-header{
+        padding: 5rem 1rem 1.5rem 1rem;
+    }
+  }
