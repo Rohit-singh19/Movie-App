@@ -88,7 +88,7 @@ function MoviePage() {
                             }
                         </div>
                     </div>
-                    <div>
+                    <div className="imagePoster">
                         <img src= {Image_Url+movie.poster_path} />
                     </div>
                 </div>

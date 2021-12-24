@@ -6,8 +6,18 @@
 
 .topmost .slick-slider .slick-list .slick-track .slick-slide > div{
     margin: 1rem;
+    cursor: pointer;
+    border-radius: .2rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5),
+    -10px -10px 10px rgba(0, 0, 0, 0.5);
+    transition: .5s;
 }
 
+.topmost .slick-slider .slick-list .slick-track .slick-slide > div:hover{
+    transform: translateY(-.5rem);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5),
+                -10px -10px 50px rgba(0, 0, 0, 0.5);
+}
 
 .swipper-heading{
     font-weight: 600;
